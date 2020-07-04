@@ -1,0 +1,78 @@
+.carousel-indicators li {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 12px;
+    height: 12px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: rgb(255, 175, 1);
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .9;
+    transition: opacity .6s ease;
+    border: 2px solid #fff;
+  }
+
+  .chocobar{
+    border-radius: 75%;
+    height: 267px;
+    width: 270px;
+    margin-left: -1px;
+  }
+
+  .icon{
+    color: #f06b9a;
+  }
+  
+  .boxborder{
+
+    border: 2px solid #f06b9a;
+    border-radius: 2px;
+    height: 100px;
+
+  }
+
+  .form-control1{
+    width: 39%;
+  }
+
+  .card{
+    border-color: white;
+
+  }
+
+  .dollar{
+    color: #f06b9a;
+  }
+
+  .fa-star{
+    color: goldenrod;
+  }
+.empty1{
+  color: rgb(219, 215, 215);
+  
+}
+
+.aname{
+  font-size: 30px;
+  color: black;
+}
+
+.zoomit{
+  transition: 0.7s;
+  transition-timing-function: transform ease-in-out;
+
+}
+
+.zoomit:hover{
+
+  
+  
+  transform: scale(1.2);
+
+}
+
