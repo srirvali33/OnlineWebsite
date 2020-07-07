@@ -131,7 +131,7 @@
 
       </section>
 
-      <form class="col-md-8" style="margin-left: 485px; margin-top: 40px;">
+      <form class="col-md-8" style="margin-left: 485px; margin-top: 40px;" name="login">
         <div class="form-group">
             <label for="emaill">Email address</label>
             <input type="email" class="form-control form-control1" id="emaill" aria-describedby="emailHelp">
@@ -147,8 +147,9 @@
 
         
        
-        <button type="submit" class="btn btn-primary" style="margin-left: 141px;background-color: #f06b9a; color: #f0e3e3; border: #f06b9a;">Login</button><br><br>
+        <button type="submit" class="btn btn-primary" style="margin-left: 141px;background-color: #f06b9a; color: #f0e3e3; border: #f06b9a;" onclick="loginpage()">Login</button><br><br>
         <a href="index.html" style="margin-left: 96px; margin-top: 20px;">Return to Main Website</a>
+        <p id="demo"></p>
       </form>
 
       <footer class="text-center pt-600px pb-20px " style="margin-top: 80px;">
@@ -187,5 +188,6 @@
 
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/login.js"></script>
     </body>
     </html>
