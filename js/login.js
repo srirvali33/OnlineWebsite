@@ -20,10 +20,18 @@
 //     }
 
     function logverification(){
-        alert("Entering page");
-    }
+        var password=document.login.pswdl.value; 
+        var emailid=document.login.emaill.value;
+        
+        if((password=='user') && (emailid=='user@email.com')){
 
-    
+                    window.location.href='loggedinpage.html';
+        }
+        else{
+                alert("Invalid credentials");
+            }
+
+        }
 
     function over(a){
         a.style.background= '#fcd4e2';
@@ -35,4 +43,8 @@
     function invalidemail(){
         document.getElementById("emailerror").innerHTML="Please enter a valid email address";
         
+    }
+
+    function logusname(){
+        document.getElementById("logusname").innerHTML="welcome";
     }

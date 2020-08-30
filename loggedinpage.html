@@ -12,7 +12,7 @@
   <link href='https://fonts.googleapis.com/css?family=Itim' rel='stylesheet'>
 </head>
 
-<body style="font-family: itim;">
+<body style="font-family: itim;" onload="logusname()">
   <section style="background-color: #f06b9a;">
     <div class="container">
       <div class="row d-flex justify-content-between pt-2 pb-2 text-white">
@@ -114,28 +114,12 @@
                 </li>
 
                 <li class="header-cart" style="float: right;">
-                  <a href="#" class="" style="color: #f06b9a; margin-right: 10px">
+                  <a href="#" class="" style="color: #f06b9a; margin-right: 10px; margin-left: -8px;">
                     <span class="fa fa-shopping-cart" aria-hidden="true"></span>
                   </a>
                 </li>
 
-                <li class="user nav-item dropdown" style="float: right; margin-right: -35px;">
-
-                  <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink"
-                    style="color: #f06b9a; margin-top: -6px;" role="button" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false">
-                    <span class="fa fa-user-circle" aria-hidden="true"></span>
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="createaccount.html"><span class="fa fa-user"
-                        aria-hidden="true"></span> Create User</a>
-                    <a class="dropdown-item" href="loginpage.html"><span class="fa fa-user" aria-hidden="true"></span>
-                      Login</a>
-
-                  </div>
-                </li>
-
-
+                <h6 id="logusname" style="color: palevioletred; margin-right: 2px;"></h6>
               </ul>
             </div>
             <div>
@@ -448,7 +432,9 @@
 
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/login.js"></script>
   <script src="js/general.js"></script>
+ 
 </body>
 
 </html>
