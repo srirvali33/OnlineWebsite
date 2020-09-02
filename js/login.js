@@ -22,13 +22,15 @@
     function logverification(){
         var password=document.login.pswdl.value; 
         var emailid=document.login.emaill.value;
+        window.localStorage.setItem('username',password);
         
         if((password=='user') && (emailid=='user@email.com')){
 
-                    window.location.href='loggedinpage.html';
+                    return true;
         }
         else{
-                alert("Invalid credentials");
+                alert(" Please Enter Valid credentials");
+                return false;
             }
 
         }
@@ -46,5 +48,10 @@
     }
 
     function logusname(){
-        document.getElementById("logusname").innerHTML="welcome";
+        var name = localStorage.getItem('username');
+        if (name != "undefined" || name != "null") {
+        document.getElementById('logusname').innerHTML = "Hello " + name;
+        } else
+        document.getElementById('logusname').innerHTML = "Hello!";
+       
     }
