@@ -25,10 +25,11 @@
         
         if((password=='user') && (emailid=='user@email.com')){
 
-                    window.location.href='loggedinpage.html';
+                    return true;
         }
         else{
-                alert("Invalid credentials");
+                alert(" Please Enter Valid credentials");
+                return false;
             }
 
         }
